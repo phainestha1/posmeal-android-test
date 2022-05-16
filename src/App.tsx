@@ -9,23 +9,15 @@
  */
 
 import React from 'react';
-import { SafeContainer } from './styles/Default';
+import {SafeContainer} from './styles/Default';
 import Main from './views/Main';
 import OnBoard from './views/OnBoard';
 
-
 const App = () => {
-  
   const isFirstLogin = false;
   // const isDarkMode = useColorScheme() === 'dark';
 
-  return (
-    <SafeContainer>
-      {isFirstLogin ? <OnBoard /> : <Main />}
-    </SafeContainer>
-
-  );
+  return <SafeContainer>{isFirstLogin ? <OnBoard /> : <Main />}</SafeContainer>;
 };
 
 export default App;
-

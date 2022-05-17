@@ -1,6 +1,13 @@
 import React, {useEffect} from 'react';
 import Widget from '../components/Widget';
-import {Container, MainTitle, ScrollView} from '../styles/Main';
+import {
+  BottomButtonContaienr,
+  Container,
+  MainTitle,
+  ScrollView,
+  WidgetButtonText,
+  WidgetSelectionButton,
+} from '../styles/Main';
 import {NativeModules} from 'react-native';
 import {Today} from '../utils/Interpreters';
 
@@ -12,15 +19,23 @@ const Main = () => {
 
   useEffect(() => {
     SharedStorage.set(JSON.stringify({text: message}));
-  }, [message]);
+  });
 
   return (
     <Container>
       <MainTitle>{today}</MainTitle>
+
       <MainTitle>{message}</MainTitle>
+
       <ScrollView>
         <Widget />
       </ScrollView>
+
+      <BottomButtonContaienr>
+        <WidgetSelectionButton>
+          <WidgetButtonText>위젯설정</WidgetButtonText>
+        </WidgetSelectionButton>
+      </BottomButtonContaienr>
     </Container>
   );
 };

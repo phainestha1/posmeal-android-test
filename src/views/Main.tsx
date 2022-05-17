@@ -1,20 +1,23 @@
 import React, {useEffect} from 'react';
 import Widget from '../components/Widget';
-import {Container, ScrollView, Title} from '../styles/Main';
-import {Today} from '../utils/DateCalculator';
+import {Container, MainTitle, ScrollView} from '../styles/Main';
 import {NativeModules} from 'react-native';
+import {Today} from '../utils/Interpreters';
 
+// TODO: Need to change messages on the widget without visiting in app page
 const Main = () => {
   const today = Today();
   const SharedStorage = NativeModules.SharedStorage;
+  const message = Date.now();
 
   useEffect(() => {
-    SharedStorage.set(JSON.stringify({text: '프론트에서 위젯 메세지 바꾸기'}));
-  }, []);
+    SharedStorage.set(JSON.stringify({text: message}));
+  }, [message]);
 
   return (
     <Container>
-      <Title>{today}</Title>
+      <MainTitle>{today}</MainTitle>
+      <MainTitle>{message}</MainTitle>
       <ScrollView>
         <Widget />
       </ScrollView>

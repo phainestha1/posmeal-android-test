@@ -1,1 +1,230 @@
-import React from 'react';
+export const mockApi = [
+  // Breakfast A
+  {
+    id: 3090,
+    date: 20220517,
+    type: 'BREAKFAST_A',
+    foods: [
+      {
+        id: 40,
+        name_kor: '떡국',
+        name_eng: 'sliced rice cake soup',
+        isVegan: true,
+        isMain: false,
+      },
+      {
+        id: 2537,
+        name_kor: '파채너비아니구이',
+        name_eng: 'roasted mix pork with sliced welsh onion',
+        isVegan: false,
+        isMain: true,
+      },
+      {
+        id: 446,
+        name_kor: '건새우호박볶음',
+        name_eng: 'stir-fried dry shrimp with pumpkin',
+        isVegan: true,
+        isMain: false,
+      },
+      {
+        id: 1134,
+        name_kor: '오이지무침',
+        name_eng: 'pickled cucumber seasoned',
+        isVegan: true,
+        isMain: false,
+      },
+    ],
+    kcal: 968,
+    protein: 15,
+  },
+  // Breakfast B
+  {
+    id: 3091,
+    date: 20220517,
+    type: 'BREAKFAST_B',
+    foods: [
+      {
+        id: 351,
+        name_kor: '계란토스트/우유',
+        name_eng: 'egg toast',
+        isVegan: true,
+        isMain: false,
+      },
+    ],
+    kcal: 647,
+    protein: 18,
+  },
+  // Lunch
+  {
+    id: 3092,
+    date: 20220517,
+    type: 'LUNCH',
+    foods: [
+      {
+        id: 28,
+        name_kor: '곤약무국',
+        name_eng: 'seasoned herb cham',
+        isVegan: true,
+        isMain: false,
+      },
+      {
+        id: 2538,
+        name_kor: '꽁치캔김치조림',
+        name_eng: 'Braised  Saury with kimchi',
+        isVegan: true,
+        isMain: true,
+      },
+      {
+        id: 1890,
+        name_kor: '콘계란찜',
+        name_eng: 'steamed eggs &corn',
+        isVegan: true,
+        isMain: false,
+      },
+      {
+        id: 172,
+        name_kor: '숙주나물',
+        name_eng: 'seasoned green bean sprouts',
+        isVegan: true,
+        isMain: false,
+      },
+    ],
+    kcal: 925,
+    protein: 41,
+  },
+  // Dinner
+  {
+    id: 3093,
+    date: 20220517,
+    type: 'DINNER',
+    foods: [
+      {
+        id: 45,
+        name_kor: '미소된장국',
+        name_eng: 'Japanese bean paste soup with tofu',
+        isVegan: true,
+        isMain: false,
+      },
+      {
+        id: 2431,
+        name_kor: '삼겹살매콤구이',
+        name_eng: 'Grilled Pork Belly with spicy sauce',
+        isVegan: false,
+        isMain: true,
+      },
+      {
+        id: 71,
+        name_kor: '두부탕수',
+        name_eng: 'sweet and sour tofu',
+        isVegan: true,
+        isMain: false,
+      },
+      {
+        id: 190,
+        name_kor: '상추파채무침',
+        name_eng: 'seasoned lettuce & welsh onion',
+        isVegan: true,
+        isMain: false,
+      },
+    ],
+    kcal: 1119,
+    protein: 51,
+  },
+  // Staff
+  {
+    id: 3114,
+    date: 20220517,
+    type: 'STAFF',
+    foods: [
+      {
+        id: 28,
+        name_kor: '곤약무국',
+        name_eng: 'seasoned herb cham',
+        isVegan: true,
+        isMain: false,
+      },
+      {
+        id: 1706,
+        name_kor: '꽁치캔김치조림',
+        name_eng: 'Braised  Saury with kimchi',
+        isVegan: true,
+        isMain: false,
+      },
+      {
+        id: 1890,
+        name_kor: '콘계란찜',
+        name_eng: 'steamed eggs &corn',
+        isVegan: true,
+        isMain: false,
+      },
+      {
+        id: 784,
+        name_kor: '가지튀김탕수',
+        name_eng: 'sweet and sour eggplant',
+        isVegan: true,
+        isMain: false,
+      },
+      {
+        id: 172,
+        name_kor: '숙주나물',
+        name_eng: 'seasoned green bean sprouts',
+        isVegan: true,
+        isMain: false,
+      },
+    ],
+    kcal: 1031,
+    protein: 42,
+  },
+  // International
+  {
+    id: 3118,
+    date: 20220517,
+    type: 'INTERNATIONAL',
+    foods: [
+      {
+        id: 455,
+        name_kor: '수수밥',
+        name_eng: 'indian millet rice',
+        isVegan: true,
+        isMain: false,
+      },
+      {
+        id: 34,
+        name_kor: '새알미역국',
+        name_eng: 'seaweed soup with small rice ball',
+        isVegan: true,
+        isMain: false,
+      },
+      {
+        id: 234,
+        name_kor: '안동찜닭',
+        name_eng: 'andong-style spicy braised chicken with vegetable',
+        isVegan: false,
+        isMain: false,
+      },
+      {
+        id: 1123,
+        name_kor: '수제칠리탕수육',
+        name_eng: 'sweet and sour pork with chili sauce',
+        isVegan: false,
+        isMain: false,
+      },
+      {
+        id: 1594,
+        name_kor: '진미채야채무침',
+        name_eng: 'seasoned dried squid with vegetables',
+        isVegan: true,
+        isMain: false,
+      },
+      {
+        id: 252,
+        name_kor: '콘샐러드',
+        name_eng: 'corn salad',
+        isVegan: false,
+        isMain: false,
+      },
+    ],
+    kcal: 0,
+    protein: 0,
+  },
+];
